@@ -8,6 +8,10 @@ export const themeColors: {
   success: { light: string; dark: string };
   warning: { light: string; dark: string };
   error: { light: string; dark: string };
+  category_languages: { light: string; dark: string };
+  category_programming: { light: string; dark: string };
+  category_math: { light: string; dark: string };
+  category_science: { light: string; dark: string };
 };
 
 declare const themeConfig: {

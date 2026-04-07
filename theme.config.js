@@ -9,6 +9,10 @@ const themeColors = {
   success: { light: '#22C55E', dark: '#4ADE80' },
   warning: { light: '#F59E0B', dark: '#FBBF24' },
   error: { light: '#EF4444', dark: '#F87171' },
+  category_languages: { light: '#8B5CF6', dark: '#A78BFA' },
+  category_programming: { light: '#EC4899', dark: '#F472B6' },
+  category_math: { light: '#06B6D4', dark: '#22D3EE' },
+  category_science: { light: '#10B981', dark: '#34D399' },
 };
 
 module.exports = { themeColors };
