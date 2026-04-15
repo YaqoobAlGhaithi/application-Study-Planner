@@ -10,6 +10,10 @@ const bundleId = "{{bundle_id}}";
 const timestamp = bundleId.split(".").pop()?.replace(/^t/, "") ?? "";
 const schemeFromBundleId = `manus${timestamp}`;
 
+// Android package name must only contain alphanumeric characters and dots
+// Each dot must be followed by a letter
+const androidPackageName = "com.studyplanner.app";
+
 const env = {
   // App branding - update these values directly (do not use env vars)
   appName: "Study Planner",
@@ -19,7 +23,7 @@ const env = {
   logoUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663058030230/e8a35ghcDQNvYAH2JPSLaQ/icon-EoXNs9wiktSoeyaf3CbeBq.webp",
   scheme: schemeFromBundleId,
   iosBundleId: bundleId,
-  androidPackage: bundleId,
+  androidPackage: androidPackageName,
 };
 
 const config: ExpoConfig = {
